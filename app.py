@@ -87,6 +87,12 @@ def main():
     st.sidebar.header("Select Model")
     model_type = st.sidebar.selectbox("Select Model Type:", ["LSTM", "GRU"])
 
+    st.sidebar.markdown("---")
+    st.sidebar.markdown("#### Haris Yunanda Rangkuti")
+    st.sidebar.markdown("200170154")
+    st.sidebar.markdown("Teknik Informatika")
+    st.sidebar.markdown("Universitas Malikussaleh")
+
     # Mengambil Mode
     if model_type == "LSTM":
         final_model = load_model("stx_model_lstm.h5")
