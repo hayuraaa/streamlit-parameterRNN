@@ -2,6 +2,7 @@ Streamlit
 yfinance
 NumPy
 Pandas
+Matplotlib
 Scikit-Learn
 TensorFlow
 Plotly
