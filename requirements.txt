@@ -6,4 +6,5 @@ Matplotlib
 Scikit-Learn
 TensorFlow
 Plotly
+Hyperopt
 Datetime
