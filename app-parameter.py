@@ -38,7 +38,7 @@ def main():
     scaled_data = scaler.fit_transform(close_prices)
 
     # Data preparation
-    n_steps = st.sidebar.slider("Select Number of Time Steps:", min_value=10, max_value=300, value=120, step=10)
+    n_steps = st.sidebar.slider("Select Number of Time Steps:", min_value=10, max_value=300, value=60, step=10)
     X, y = prepare_data(scaled_data, n_steps)
 
     # Splitting into train and test sets
@@ -54,11 +54,11 @@ def main():
 
     # Sidebar for hyperparameter tuning
     st.sidebar.header("Hyperparameter Tuning")
-    units = st.sidebar.selectbox("Select Number of Units:", [50, 100, 150], index=1)
+    units = st.sidebar.selectbox("Select Number of Units:", [50, 100, 150], index=0)
     dropout_rate = st.sidebar.slider("Select Dropout Rate:", min_value=0.2, max_value=0.5, value=0.4, step=0.01)
     learning_rate = st.sidebar.slider("Select Learning Rate:", np.log(0.001), np.log(0.01), value=np.log(0.005), step=0.001)
-    epochs = st.sidebar.selectbox("Select Number of Epochs:", [50, 100, 150], index=1)
-    batch_size = st.sidebar.selectbox("Select Batch Size:", [32, 64, 128], index=1)
+    epochs = st.sidebar.selectbox("Select Number of Epochs:", [50, 100, 150], index=0)
+    batch_size = st.sidebar.selectbox("Select Batch Size:", [32, 64, 128], index=0)
 
     # Hyperparameter search space
     space = {

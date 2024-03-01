@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Streamlit
 yfinance
 NumPy
@@ -9,3 +10,16 @@ Plotly
 Pyngrok
 Hyperopt
 Datetime
+=======
+Streamlit
+yfinance
+NumPy
+Pandas
+Matplotlib
+Scikit-Learn
+TensorFlow
+Plotly
+Pyngrok
+Hyperopt
+Datetime
+>>>>>>> 06a1c5b88be391774ea9bce1af4cdee0b41136b2
